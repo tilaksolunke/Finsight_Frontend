@@ -13,7 +13,7 @@ import SignUp from "./components/register";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Profile from "./components/profile";
+import Home from "./components/Home";
 import { useState } from "react";
 import { auth } from "./components/firebase";
 
@@ -32,11 +32,11 @@ function App() {
             <Routes>
               <Route
                 path="/"
-                element={user ? <Navigate to="/profile" /> : <Login />}
+                element={user ? <Navigate to="/Home" /> : <Login />}
               />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<SignUp />} />
-              <Route path="/profile" element={<Profile />} />
+              <Route path="/Home" element={<Home />} />
             </Routes>
             <ToastContainer />
           </div>

@@ -1,0 +1,65 @@
+.home-container {
+  background: linear-gradient(to bottom, #0a3d1f, #05291b);
+  height: 103vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.home-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.home-subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.home-search-bar {
+  width: 80%;
+  max-width: 600px;
+}
+
+.home-search-input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+}
+
+.home-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.auth-inner {
+  
+  background: #b8d6b4;
+  
+}
+
+.logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

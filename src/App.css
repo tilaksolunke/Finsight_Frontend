@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,111 @@
   to {
     transform: rotate(360deg);
   }
+} */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  background: #0a3d1f;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container,
+.signup-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-heading,
+.signup-heading {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.register-link a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.or-divider {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  flex-grow: 1;
+  background: #ddd;
+  height: 1px;
+  margin: 0 10px;
+}
+
+.google-signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4285F4;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.google-signin img {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
 }
